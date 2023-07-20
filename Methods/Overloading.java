@@ -1,0 +1,21 @@
+class Overloading
+{
+	public static void main(String[] args) 
+	{
+		double res=test(10,20);
+        double res1=test (10,20,30);
+		
+			System.out.println(res);
+            System.out.println(res1);
+		
+		}
+	public static int test(int a, int b)
+	{
+		return a+b;
+	}
+	public static int test(int a,double b,int c)
+	{
+		return a+b+c;
+	}
+}
+

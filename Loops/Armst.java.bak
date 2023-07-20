@@ -1,0 +1,40 @@
+class Armst 
+{
+	public static void main(String[] args) 
+	{
+		int count=0;
+		int n=9474;
+		int sum=0;
+		int m=n;
+		int p=n;
+		int rem;
+		while (n>0)
+		{
+			count++;
+			n=n/10;
+
+		}
+		while (m>0)
+		{int a=count;
+		
+			rem=m%10;
+			int prod=1;
+			while (a>0)
+			{
+				prod=prod*rem;
+				a--;
+			}
+			sum=sum+prod;
+			m=m/10;
+		}
+		{
+		if (p==sum)
+		{
+		System.out.println(p+" is an Arm strong num");
+		}
+		 else
+		{
+		System.out.println(p+" not an arm strong num");
+	}}
+}
+}

@@ -1,0 +1,26 @@
+class InvertedPyramid 
+{
+	public static void main(String[] args) 
+	{
+
+		int n=4;
+		int space=0;
+        int star=7;
+		for (int row=0;row<n;row++)
+		{ 
+			for (int i=0;i<space;i++)
+			{
+         		System.out.print(" ");
+		    }
+			for (int j=0;j<star;j++)
+			{
+			  System.out.print("* ");
+			}
+              space=space+2;
+			  star=star-2;
+		         System.out.println();
+	}
+  }
+}
+
+

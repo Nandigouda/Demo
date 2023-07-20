@@ -1,0 +1,23 @@
+class  Mreccuresion{ 
+
+
+/* in method reccuresion we have 2 types
+ 1) direct reccuresion
+ 2) in direct reccuresion
+
+
+Direct reccuresion:- a method calling itself is know as direct reccuresion.
+In direct reccuression:- a two method calling each other is known as indirect reccuresion.
+*/
+	public static void main(String[] args) 
+	{
+		System.out.println("ME");
+		test();
+				System.out.println("ME");
+	}
+	public static void test()
+	{
+		System.out.println("TB");
+		test();
+		System.out.println("TE");
+}}

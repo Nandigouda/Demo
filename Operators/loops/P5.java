@@ -1,0 +1,12 @@
+class P5   //program to remove last digit of a given num 
+{
+	public static void main(String[] args) 
+	{
+
+		int a=1234;
+		 int rem=a/10;
+
+
+		System.out.println(rem);
+	}
+}

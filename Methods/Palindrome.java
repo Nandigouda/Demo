@@ -1,0 +1,36 @@
+class Palindrome 
+{
+	public static void main(String[] args) 
+	{
+
+	boolean res=palin(11);
+	if (res)
+	System.out.println("it is a Palindrome");
+	else 
+	System.out.println("not an Palindrome");
+	}
+	public static boolean palin(int n)
+	
+		{
+
+			int temp=n;
+			int rev=0;
+			int rem;
+			{
+			while (n>0)
+			{
+			rem=n%10;
+			rev=rev*10+rem;
+			n=n/10;
+		    }
+		    if (rev==temp)
+		    
+			return true;
+			else
+			return false;
+		    }
+
+		}
+
+
+}

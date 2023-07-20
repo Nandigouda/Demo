@@ -1,0 +1,47 @@
+class Demo 
+{
+	static int a=test();
+	int b=print();
+	{
+		System.out.println("IIB-1");
+	}
+	static
+	{
+	System.out.println("SIB-1");
+	}
+	public static int test()
+	{
+		System.out.println("Test begin");
+	System.out.println(a);
+	System.out.println("Test End");
+		return 30;
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Main Begin");
+		Demo Obj=new Demo(10);
+		Obj.test();
+		Obj.print();
+		System.out.println(Obj.a);
+		System.out.println(Obj.b);
+		System.out.println("Main End");
+	}
+	public int print()
+	{
+        System.out.println("Print BEgin");
+		System.out.println(a);
+	     System.out.println(b);
+	     test();
+		System.out.println("Print end");
+		return 60;
+	}
+	Demo()
+	{
+	 System.out.println("constructor of No Argumnt");
+	}
+	Demo(int a)
+	{
+		this();
+		        System.out.println("Parameterised Constructor");
+	}
+}

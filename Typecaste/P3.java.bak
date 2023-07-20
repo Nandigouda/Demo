@@ -1,0 +1,16 @@
+class P3 
+{
+	public static void main(String[] args) 
+	{
+		float a=20.00f;
+
+		System.out.println(a);
+		long l=1212l;
+				System.out.println(l);
+		
+
+
+
+	
+	}
+}

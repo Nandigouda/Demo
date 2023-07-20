@@ -1,0 +1,55 @@
+public class ArmStrong1
+{
+	public static void main(String[] args) 
+	{
+	int count=0;n=153;temp=n;sum=0;prod=1;
+	int pow=Power(n,count);
+	ArmStrong(n,temp,sum,prod,pow);
+
+	}
+	public static void ArmStrong(int n,int temp,int sum,int prod,int pow)
+	{
+				int rem=n%10;
+				int a=prod(rem,prod,pow);
+				sum=sum+a;
+				n=n/10;
+				prod=1;
+				if (n==0)
+				{
+					if (sum==temp)
+					{
+						System.out.println(temp+" is a ArmStrong Number");
+					}
+					else
+					{
+						System.out.println(temp+" is not a ArmStrong Number");
+
+				} return;
+				}
+				ArmStrong(n,temp,sum,prod,pow);
+	}
+	public static int prod(int rem,int prod,int pow)
+	{
+				prod=prod*rem;
+				pow--;
+				if (pow==0)
+				{
+					return prod;
+				}
+				int a=prod(rem,prod,pow);
+				return a;
+	}
+
+		public static int Power(int n,int count)
+	{
+			count++;
+			n=n/10;
+			if (n==0)
+			{
+				return count;
+			}
+			count=Power(n,count);
+				return count;
+			
+
+}}

@@ -1,0 +1,13 @@
+class pgpractise
+{
+	public static void main(String [] args) 
+	{
+		// int x=11;
+		// byte y=22;
+		// float z=10;
+		int a=10;
+		int b=(int) a+10.0;
+		  System.out.print(a);
+
+	}
+}

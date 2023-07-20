@@ -1,0 +1,26 @@
+class PalindromDo   //check given num is palindrom or not  
+{
+	public static void main(String[] args) 
+	{
+		int a=121;
+		int b;
+		int c=0;
+		int d=a;
+		do
+		{
+			b=a%10;
+			c=c*10+b;
+			a=a/10;
+
+		}
+
+		while (a>0);
+		{
+			if (c==d)
+			{
+System.out.println(d +" is a aplindrom");
+			}
+			else
+		System.out.println(d +" is not a palindrome");
+	}
+}}

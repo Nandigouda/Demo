@@ -1,0 +1,50 @@
+/*
+    *
+   ***
+  *****
+ *******
+  *****
+   ***
+    *
+*/
+
+class Pyra
+{
+	public static void main(String[] args) 
+	{ int n=4;
+		int a=3;
+		int b=1;
+		int space=2;
+        int star=5;
+		for (int row=0;row<n;row++)
+		{
+			for (int i=0;i<a;i++)
+		    {
+		        System.out.print("  ");
+		    }
+		     for (int j=0;j<b;j++)
+		     {
+		         System.out.print("* ");
+			 }
+			  a--;
+		      b=b+2;
+		
+			 	System.out.println();
+		     }
+		for (int row=0;row<n;row++)
+		{
+			for (int i=0;i<space;i++)
+			{
+         		System.out.print(" ");
+		        }
+			for (int j=0;j<star;j++)
+			{
+			  System.out.print("* ");
+			  }
+              space=space+2;
+			  star=star-2;
+		
+		         System.out.println();
+	}
+}
+}

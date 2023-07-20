@@ -1,0 +1,18 @@
+class Non
+{
+	public static void main(String[] args) 
+	/*{
+
+		NonStatic a;
+		a=new NonStatic();
+		System.out.println(a);  //NonStatic2c7b84de
+	}
+}
+*/
+	{
+		
+		System.out.println(new Non());
+	}
+}
+
+

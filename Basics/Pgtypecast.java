@@ -1,0 +1,15 @@
+class Pgtypecast
+{
+	public static void main(String[] args) 
+	{
+		int tamount=500;
+		int perChoco=10;
+		int numStd=5;
+
+		int tNumofChoco=tamount/perChoco;  // 50
+
+		int chocoperstd=tNumofChoco/numStd;   // 10
+
+		System.out.println("num of chocoperstd "  + chocoperstd);    // 10
+	}
+}

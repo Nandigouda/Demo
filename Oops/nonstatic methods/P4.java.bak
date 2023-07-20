@@ -1,0 +1,29 @@
+class P4 
+{
+	int a;
+	static int b=20;
+
+	public static void main(String[] args) 
+	{
+
+
+		System.out.println("MB");
+		P4 obj=new P4();
+		obj.test();
+		obj.a=20;
+		System.out.println(obj.a);
+		System.out.println(obj.b);
+		P4 obj1=new P4();
+		ob1.test();
+		System.out.println(obj1.a);
+		System.out.println(obj1.b);
+		System.out.println("ME");
+
+	}
+	public void test()
+	{
+				System.out.println("TB");
+						System.out.println(a);
+								System.out.println(b);
+											System.out.println("TE");
+}}

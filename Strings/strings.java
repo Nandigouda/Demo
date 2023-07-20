@@ -1,0 +1,25 @@
+public class Strings 
+{
+	public static void main(String[] args) 
+	{
+
+		 String s="nikhil";
+		String s1="nikhil1";
+		//System.out.println(s==s1);//false
+		//System.out.println(s.equals(s1));//false
+		int xyz=s.compareTo(s1);
+        //  System.out.println(xyz);
+		int a=10;
+		int b=10;
+		//System.out.println(a.equals(b));
+		//System.out.println(a==b);//true
+		String str="qspider is an training institute";
+           String []xy= str.split(" ");
+		   for (int i=0;i<=str.length()-1 ;i++ )
+		   {
+               System.out.println(xy[i]);
+
+		   }
+		  // System.out.println(xy);
+	}
+}

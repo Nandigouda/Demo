@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class AeByScanner 
+{
+	public static void main(String[] args) 
+	{
+
+		Scanner s=new Scanner(System.in);
+		System.out.println("Well Come to Apllication...!");
+		System.out.println("Please enter the elements...");
+		double numarator=s.nextInt();
+		int denomarator=s.nextInt();
+		double res=numarator/denomarator ;
+		System.out.println(numarator+"/"+denomarator+"="+res);
+
+
+
+
+
+	}
+}

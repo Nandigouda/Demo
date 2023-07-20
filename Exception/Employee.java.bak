@@ -1,0 +1,35 @@
+class Employee
+{
+	String name;
+		double sal;
+	Employee (){}
+	Employee(String name,double sal)
+	{
+		
+
+	try
+	{
+		this.name=name;
+		if (sal<0)
+			this.sal=sal;
+       
+     else
+	throw new negativeSalaryException();
+	}
+	catch (RuntimeException e)
+	{
+      System.out.println("please provide sal");
+
+	}
+	}	
+
+public void display(){
+
+
+System.out.println("Employee name :"+name);
+System.out.println("Employee sal :"+sal);
+System.out.println("===============================");
+}
+}
+
+

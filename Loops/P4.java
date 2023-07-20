@@ -1,0 +1,25 @@
+/*
+1 2 3 4
+5 6 7 8
+9 10 11 12 
+13 14 15 16
+*/
+class P4 
+{
+	public static void main(String[] args) 
+	{
+		int a=1;
+		int n=4;
+		for(int row=1;row<=n;row++)
+		{
+			for(int col=1;col<=n;col++)
+			{
+				System.out.print(a+" ");
+				a++;
+			}
+             		System.out.println();
+		}
+			
+
+	}
+}

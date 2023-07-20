@@ -1,0 +1,31 @@
+/*
+2 4 6 8
+3 6 9 12
+10 12 14 16 
+15 18 21 24
+*/
+class forloop3 
+{
+	public static void main(String[] args) 
+	{
+		int n=4;
+		int a=2;
+		int b=3;
+		for(int row=1;row<=n;row++)
+		{
+			for(int col=1;col<=n;col++)
+			    {
+				if (row%2==0)
+				{
+				System.out.print(b+"  ");
+				b+=3;
+				}
+				else
+				{
+				System.out.print(a+"  ");
+				a+=2;
+				}}
+             	System.out.println();
+		}
+	}
+}

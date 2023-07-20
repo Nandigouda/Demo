@@ -1,0 +1,20 @@
+class GarbageCollection 
+{
+	public static void main(String[] args) 
+	{
+		GarbageCollection obj=new GarbageCollection();
+		obj=new GarbageCollection();
+		obj=new GarbageCollection();
+		obj=new GarbageCollection();
+		obj=new GarbageCollection();
+		System.out.println(obj);
+		System.gc();
+
+	}
+	public void finalize()
+		
+	{
+		System.out.println("Remove th object");
+	}
+
+}

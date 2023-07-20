@@ -1,0 +1,17 @@
+class Nikhil 
+{
+	static int a;
+		int b;
+	public static void main(String[] args) 
+
+	{
+		
+		Nikhil Obj=new Nikhil();
+	Obj.test();
+	}
+	public void test(){
+		System.out.println(this.a);
+				System.out.println("this: "+this);
+			
+	}
+}

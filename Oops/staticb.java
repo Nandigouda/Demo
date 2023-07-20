@@ -1,0 +1,42 @@
+class  Staticb
+{
+	static int a=test();
+	static 
+	{
+		System.out.println("SIB-1");
+	}
+
+	public static int test()
+	{
+		System.out.println("TB");
+		System.out.println(a);
+		Print();
+        System.out.println(b);
+	    System.out.println("TE");
+		return 30;
+	}
+	public static void main(String[] args)
+	{
+		System.out.println("MB");
+		test();
+	    System.out.println(Print());
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println("ME");
+	}
+	static int b=test()+Print();
+	static 
+	{
+		System.out.println("SIB-2");
+	}
+	public static int Print()
+	{
+	System.out.println("PB");
+	System.out.println(a);
+	System.out.println(b);
+	System.out.println("PE");
+	return 60;
+	}
+}
+
+

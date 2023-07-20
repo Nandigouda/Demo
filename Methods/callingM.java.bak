@@ -1,0 +1,22 @@
+class callingM 
+{
+	public static void main(String[] args) 
+	{
+
+		System.out.println("Main began");
+		print();
+		test();
+		System.out.println("Main end");
+	}
+	public static void print()
+	{
+		System.out.println("print began");
+		System.out.println("print end");
+	}
+	public static void test()
+	{
+	   System.out.println("test begin");
+	   System.out.println("test end");
+    }
+
+    }

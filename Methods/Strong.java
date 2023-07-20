@@ -1,0 +1,46 @@
+class Strong 
+{
+	public static void main(String[] args) 
+	{
+		boolean res=Strong(2);   // 1,2,145
+		if (res)
+		 {
+		  System.out.println("is a strong ");
+		 }
+		else
+			{
+		      System.out.println("is not a Storng");
+
+	        }
+	}
+	 public static boolean Strong(int a)
+	{
+		int temp=a;
+		int sum=0;
+					
+		while (a>0)
+		{ 
+		int prod=1;
+		int count=1;
+			int rem=a%10;
+			while (count<=rem)
+			{
+			prod=prod*count;
+			count++;
+			}
+		sum=sum+prod;
+			
+            a=a/10;
+		}
+
+if (sum==temp)
+	
+	{
+		      return true;
+		    }
+		    else
+		    {
+			return false;
+		    }
+}
+}

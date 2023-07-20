@@ -1,0 +1,29 @@
+class Calculator 
+{
+	public static void main(String[] args) 
+	{
+int res1=add(10,20);
+
+		System.out.println(res1);
+		int res2=mult(10,20);
+				System.out.println(res2);
+				int res3=div(10,20);
+						System.out.println(res3);
+	}
+
+       public static int add(int a,int b)
+	  {
+		   int c=a+b;
+		   return c;
+      }
+	  public static int mult(int a,int b)
+	{
+		  return a*b;
+	}
+	public static int div(int a,int b)
+	{
+		return a/b;
+
+
+    }
+}

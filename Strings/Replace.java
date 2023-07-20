@@ -1,0 +1,27 @@
+class Replace
+{
+	public static void main(String[] args) 
+	{
+
+String s1="Welcome to java";
+String s3=new String ("Welcome to java");
+String s4="Welcome to java";
+String s2=s1;
+
+System.out.println(s1==s2); //true
+System.out.println(s1==s3); //false
+System.out.println(s1==s4); //true
+System.out.println(s1.equals(s3)); //true
+
+System.out.println(s1.equals(s4)); //true
+
+
+String s="nikhil";
+		System.out.println(s.replaceFirst("i","l"));  //nlkhil
+		System.out.println(s.replaceAll("i","l"));//nlkhl
+
+		System.out.println("java is fun".matches("java.*")); //true
+
+		System.out.println("440-02-4534".matches("\\d{3}.*")); //true
+	}
+}

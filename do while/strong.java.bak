@@ -1,0 +1,33 @@
+class  Strong
+{
+	public static void main(String[] args) 
+	{
+		int n=1124; int b=n;
+int i=1; int sum=0;
+
+
+		do
+		{
+			int rem = n%10;
+			int prod=1;
+			{
+while (i<=rem)
+{
+prod=prod*rem;
+rem--;
+}
+sum=sum+prod;
+n=n/10;
+}}
+		while (n>0);
+		if (sum==b)
+		{
+						 System.out.println("strong num");
+		}
+		else
+		{
+		System.out.println("not an strong num");
+	}
+}
+	}
+

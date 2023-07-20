@@ -1,0 +1,33 @@
+class  Neon1
+{
+	public static void main(String[] args) 
+	{
+		int sum=0;
+	     int n=0;
+			int sq=n*n;
+		
+		sum=Neon(n,sq,sum);
+		if (sum==n)
+		{
+			System.out.println("Neon");
+
+		}
+		else 
+		{
+			System.out.println(" not an Neon");
+
+	}}
+	public static int Neon(int n,int sq,int sum)
+	{
+		int rem=sq%10;
+		sum=sum+rem;
+		sq=sq/10;
+		
+	if (sq==0)
+	{ 
+		return sum;
+		}
+	sum=Neon(n,sq,sum);
+	return sum;
+}
+}

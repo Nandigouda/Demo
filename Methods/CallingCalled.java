@@ -1,0 +1,15 @@
+class CallingCalled 
+{
+	public static void main(String[] args) 
+	{
+	System.out.println("main began");
+	test();
+	System.out.println("Main end");
+	}
+	public static void test()
+	{
+		System.out.println("Test began");
+	    System.out.println("test end");
+
+    }
+}

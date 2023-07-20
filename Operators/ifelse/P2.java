@@ -1,0 +1,18 @@
+class P2    //find given char is vowle or consent
+{
+	public static void main(String[] args) 
+	{
+		char ch='%';
+		if(ch>='a'&&ch<='z'|| ch>='A'&&ch<='Z')
+		{
+			if(ch=='A'||ch=='a'||ch=='E'||ch=='e'||ch=='I'||ch=='i'||ch=='O'||ch=='o'||ch=='U'||ch=='u')
+		System.out.println(ch+" is a vowel");
+
+			else
+						System.out.println(ch+" is a consnent");
+		}
+		else
+					System.out.println("enter an alphabet");
+
+	}
+}

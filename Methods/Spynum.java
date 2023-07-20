@@ -1,0 +1,39 @@
+class SpyNum 
+{
+	public static void main(String[] args) 
+	{
+		boolean res=Spynum(123);   // 1,2,145
+		if (res)
+		 {
+		  System.out.println("is a Spynum ");
+		 }
+		else
+			{
+		      System.out.println("is not a Spynum");
+
+	        }
+	}
+	public static boolean Spynum(int n) 
+	{
+		int temp=n;
+		int prod=1;
+		int sum=0;
+		while (n>0)
+		{
+			int rem=n%10; //4,2,1,1
+			sum=sum+rem;    //0+4,4+2,6+1,7+1=8
+			prod=prod*rem;   //1*4,4*2,8*1,8*1=8
+			n=n/10;
+
+		}
+		if (sum==prod)
+		
+			 {
+		      return true;
+		  }
+		    else
+		    {
+			return false;
+		    }
+}
+	}

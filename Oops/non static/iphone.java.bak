@@ -1,0 +1,6 @@
+class Iphone 
+{
+	String Modle;
+	String camera;
+	Double Price;
+}

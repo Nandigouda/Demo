@@ -1,0 +1,21 @@
+class Test
+{
+	Test(double d)
+	{
+		this(10);
+		System.out.println("int Arg Constructor");
+	}
+	Test(int d)
+	{
+		this();
+		System.out.println(" Double Arg Constructor");
+	}
+	Test()
+	{
+		System.out.println("No Arg Constructor");
+	}
+      public static void maina(String[] args)
+    {
+	Test t1=new Test(10.5);
+}
+}

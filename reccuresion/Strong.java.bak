@@ -1,0 +1,42 @@
+class  Strong
+{
+	public static void main(String[] args) 
+	{
+		int n=1; int temp=n; int sum=0;  int prod=1;
+		Reminder(n,sum,temp,prod);	
+	}
+	public static void Reminder(int n,int sum,int temp,int prod)
+	{
+       int rem=n%10;
+      int b=Product(rem,prod);
+        sum=sum+b;
+         n=n/10;
+         prod=1;
+         if (n==0)
+     {
+	 if (sum==temp)
+	 {
+		 System.out.println(temp+" is a strong num");
+	 }
+	 else
+	 {
+		 System.out.println(temp+" is not a strong num");
+	 }
+	 return;
+     }
+         Reminder(n,sum,temp,prod);
+	 }
+
+        public static int Product(int rem,int prod)
+	   {
+		prod=prod*rem;
+		rem--;
+	    if (rem==0)
+	    {
+	      return prod;
+	     }
+          int b=Product(rem,prod);
+	      return b;
+	      }
+	     }
+
